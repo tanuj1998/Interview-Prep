@@ -1,11 +1,11 @@
 public class RatMaze{
 	static int N;
 
-	boolean isSafe(int maze[][],int x, int y){
+	public boolean isSafe(int maze[][],int x, int y){
 	return (x >= 0 && x < N && y >= 0 && y < N && maze[x][y] == 1);
 	}
 
-	boolean solveMaze(int maze[][], int x, int y, int sol[][]){
+	public boolean solveMaze(int maze[][], int x, int y, int sol[][]){
 	if(x == (N-1) && y == (N-1)){
 		sol[x][y] = 1; //set 1 in the solution matrix
 		return true;

@@ -1,7 +1,7 @@
 public class NQueen{
 	final int N = 4;
 
-	 boolean isSafe(int board[][], int row, int col) 
+	public boolean isSafe(int board[][], int row, int col) 
     { 
         int i, j; 
   
@@ -19,7 +19,7 @@ public class NQueen{
         return true; 
     } 
 
-	boolean solveNQ(int board[][],int col){
+	public boolean solveNQ(int board[][],int col){
 		if(col >= N){
 			return true;
 		}
