@@ -1,3 +1,8 @@
+/*
+Program to get the square root of an integer. If a is not a perfect square, return floor(sqrt(a)).
+e.g. Input: 11
+     Output: 3
+*/
 public class Solution {
     public int sqrt(int a) {
         if(a == 0 || a == 1){
