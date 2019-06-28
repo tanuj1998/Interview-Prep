@@ -1,3 +1,7 @@
+ /*
+ Given two arrays A & B of size N each.
+Find the maximum N elements from the sum combinations (Ai + Bj) formed from elements in array A and B.
+*/
  public class NMaxPairCombinations{
  public ArrayList<Integer> solve(ArrayList<Integer> A, ArrayList<Integer> B) {
         
