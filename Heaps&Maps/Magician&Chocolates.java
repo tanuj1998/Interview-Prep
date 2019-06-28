@@ -1,4 +1,5 @@
-/* Given N bags, each bag contains A[i] chocolates. There is a kid and a magician. In one unit of time, kid chooses a random bag i, eats Ai chocolates, then the magician fills the ith bag with floor(Ai/2) chocolates.
+/* Given N bags, each bag contains A[i] chocolates. There is a kid and a magician. In one unit of time, 
+kid chooses a random bag i, eats Ai chocolates, then the magician fills the ith bag with floor(Ai/2) chocolates.
 
 Given Ai for 1 <= i <= N, find the maximum number of chocolates kid can eat in K units of time.
 
