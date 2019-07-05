@@ -7,8 +7,8 @@ Find the maximum N elements from the sum combinations (Ai + Bj) formed from elem
         
         Collections.sort(A,Collections.reverseOrder());
         Collections.sort(B,Collections.reverseOrder());
+  
         int len = A.size();
-        
         PriorityQueue<Integer> pq = new PriorityQueue<>();
         
         for(int i = 0; i < A.size(); i++){
