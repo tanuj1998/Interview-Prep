@@ -46,6 +46,7 @@ class BinarySearchTree
             root.right = deleteRec(root.right,key);
         }
 
+        //key to be deleted as it is same as the root
         else{
             if(root.left == null){
                 return root.right;
