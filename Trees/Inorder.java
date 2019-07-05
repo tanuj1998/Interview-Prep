@@ -11,26 +11,28 @@
  *     }
  * }
  */
+
 public class Inorder{
     public ArrayList<Integer> inorderTraversal(TreeNode A){
-    	ARRAYlIST<Integer> res = new ArrayList<Integer>();
-    	Stack<TreeNode> st = new Stack<TreeNode>();
+    	ArrayList<Integer> res = new ArrayList<Integer>();
+        Stack<TreeNode> st = new Stack<TreeNode>();
 
-    	if(A == null){
-    		return res;
-    	}
+        if(A == null){
+            return A;
+        }
 
-    	TreeNode curr = A;
+        TreeNode curr = A;
 
-    	while(curr != null || st.size() > 0){
-    		while(curr != null){
-    			st.push(curr);
-    			cur = curr.left;
-    		}
-    		curr = st.pop();
-    		ans.add(curr.val);
-    		curr = curr.right;
-    	}
-    	return res;
+        while(curr != null || st.size() > 0){
+
+            while(curr != null){
+                st.push(curr);
+                curr = curr.left;
+            }
+            curr = st.pop();
+            res.add(curr.val);
+            curr = curr.right;
+        }
+        return res;
     }
 }
