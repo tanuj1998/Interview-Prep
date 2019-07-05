@@ -18,26 +18,24 @@ public class PostOrder {
         ArrayList<Integer> res = new ArrayList<Integer>();
         Stack<TreeNode> st = new Stack<TreeNode>();
         TreeNode last = null;
-        
+
         while(!(st.isEmpty()) || A != null){
             if(A != null){
                 st.push(A);
-                A = A.left;
+                A = A.left;  //left
             }
             else{
                 TreeNode getN = st.peek();
-                
+
                 if(getN.right != null && last != getN.right){
-                    A = getN.right;
+                    A = getN.right; //right
                 }
                 else{
-                    res.add(getN.val);
+                    res.add(getN.val);  //root
                     last = st.pop();
                 }
             }
         }
-        return res;
-        
-        
+        return res;   
     }
 }

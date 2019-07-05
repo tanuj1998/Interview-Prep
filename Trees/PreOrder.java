@@ -13,25 +13,30 @@
  */
 public class PreOrder {
     public ArrayList<Integer> preorderTraversal(TreeNode A) {
-        ArrayList<Integer> res = new ArrayList<Integer>();
-        Stack<TreeNode> stack = new Stack<TreeNode>();
-        
-        if(A == null){
-            return res;
-        }
-        TreeNode curr = A;
-        stack.push(curr);
-        
-        while(stack.size() > 0){
-            curr = stack.pop();
+      ArrayList<Integer> res = new ArrayList<Integer>();
+      Stack<TreeNode> st = new Stack<TreeNode>();
+
+      if(A == null){
+        return null;
+      }
+
+      TreeNode curr = A;
+      st.push(curr);
+
+        while(st.size() > 0){
+            curr = st.pop();
             res.add(curr.val);
+
             if(curr.right != null){
-                stack.push(curr.right);
+                st.push(curr.right);
             }
+            
             if(curr.left != null){
-                stack.push(curr.left);
+                st.push(curr.left);
             }
+            
         }
+
         return res;
     }
 }
