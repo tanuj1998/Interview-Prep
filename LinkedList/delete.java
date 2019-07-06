@@ -37,3 +37,29 @@ public void delete(int key){
 
 	prev.next = temp.next;
 }
+
+//Deleting key at given position
+
+public void delete(int position){
+	Node temp = head;
+
+	if(head == null){
+		return;
+	}
+	if(position == 0){
+		head = temp.next;
+		return;
+	}
+
+	for(int i = 0; temp != null && i < position-1; i++){
+		temp = temp.next;
+	}
+
+	if(temp == null || temp.next == null){
+		return;
+	}
+
+	Node next = temp.next.next;
+	temp.next = next;
+
+}
