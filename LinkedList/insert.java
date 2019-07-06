@@ -1,3 +1,18 @@
+/*class LinkedList 
+{ 
+    Node head; // head of list 
+    class Node 
+    { 
+        int data; 
+        Node next; 
+        Node(int d) 
+        { 
+            data = d; 
+            next = null; 
+        } 
+    } 
+  */  
+    
 //Add to front of the list
 public void push(int new_data){
 	Node new_node = new Node(new_data);
