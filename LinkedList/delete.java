@@ -1,4 +1,4 @@
-/*class LinkedList 
+class LinkedList 
 { 
     Node head; // head of list 
   
@@ -12,7 +12,6 @@
             next = null; 
         } 
     } 
-*/
 
 //Deleting a given key
 

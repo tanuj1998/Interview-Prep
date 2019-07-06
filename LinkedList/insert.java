@@ -1,4 +1,4 @@
-/*class LinkedList 
+class LinkedList 
 { 
     Node head; // head of list 
     class Node 
@@ -10,8 +10,7 @@
             data = d; 
             next = null; 
         } 
-    } 
-  */  
+    }  
     
 //Add to front of the list
 public void push(int new_data){
