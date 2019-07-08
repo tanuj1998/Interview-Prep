@@ -4,8 +4,8 @@ class LinkedList
   
     class Node 
     { 
-        int data; 
-        Node next; 
+        int data; //store data
+        Node next; //pointer to node
         Node(int d) 
         { 
             data = d; 
