@@ -13,7 +13,7 @@
  */
 
 /*
-Given a binary search tree, write a function to find the kth smallest element in the tree.
+Given a binary search tree, write a function to find the kth smallest element in the given tree.
 */
 public class KthSmallestElement {
     int res = 0;
