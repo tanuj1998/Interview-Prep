@@ -1,3 +1,10 @@
+/*
+Given an array of integers, return the highest product possible by multiplying 3 numbers from the array
+[0, -1, 3, 100, 70, 50]
+
+=> 70*50*100 = 350000
+*/
+
 public class Solution {
     public int maxp3(ArrayList<Integer> A) {
     Collections.sort(A);
