@@ -1,3 +1,6 @@
+/*
+Given a singly linked list, determine if it is a palindrome.
+/*
 /**
  * Definition for singly-linked list.
  * public class ListNode {
