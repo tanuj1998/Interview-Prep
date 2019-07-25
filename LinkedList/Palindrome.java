@@ -6,8 +6,9 @@ Input: 1->2
 Output: false
 Example 2:
 
+Input: 1->2->2->1
+Output: true
 /*
-
 /**
  * Definition for singly-linked list.
  * public class ListNode {
