@@ -58,6 +58,12 @@ public class Solution {
             addFront(key,value); //add new one
         }
     }
+
+     private void addFront(int key, int num){
+        al.add(0,key);
+        map.put(key,num);
+        count++; //count increased by 1
+    }
     
     
 }
