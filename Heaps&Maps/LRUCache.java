@@ -64,12 +64,19 @@ public class Solution {
         map.put(key,num);
         count++; //count increased by 1
     }
-    
+
     private void removeElem(int num){
         int index = al.indexOf(num); //get index of the elem
         al.remove(index); //remove elem
         count--; //Count decreased by 1
     
-    
+    }
+
+    private void removeAtLast(){
+        int key = al.get(al.size()-1); //get key at the last place
+        al.remove(al.size()-1); //remove last from ArrayList
+        map.remove(key); //Remove last from HashMap
+        count--; //Count decreased by 1
+    }
     
 }
