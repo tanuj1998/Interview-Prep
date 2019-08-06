@@ -65,5 +65,11 @@ public class Solution {
         count++; //count increased by 1
     }
     
+    private void removeElem(int num){
+        int index = al.indexOf(num); //get index of the elem
+        al.remove(index); //remove elem
+        count--; //Count decreased by 1
+    
+    
     
 }
