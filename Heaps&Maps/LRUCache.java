@@ -7,4 +7,16 @@ should invalidate the least recently used item before inserting the new item.
 The LRU Cache will be initialized with an integer corresponding to its capacity. Capacity indicates the maximum 
 number of unique keys it can hold at a time.
 
+
+Example :
+
+Input : 
+         capacity = 2
+         set(1, 10)
+         set(5, 12)
+         get(5)        returns 12
+         get(1)        returns 10
+         get(10)       returns -1
+         set(6, 14)    this pushes out key = 5 as LRU is full. 
+         get(5)        returns -1 
 */
