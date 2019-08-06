@@ -41,6 +41,23 @@ public class Solution {
             return -1;
         }
     }
+
+     public void set(int key, int value) {
+         
+        if(!(map.containsKey(key))){ //If not in the map
+            if(count < c){ //see not reached max capacity
+                addFront(key,value); //add value
+            }
+            else{
+                removeAtLast(); //remove last elem
+                addFront(key,value); //add there
+            }
+        }
+        else{
+            removeElem(key); //remove that elem
+            addFront(key,value); //add new one
+        }
+    }
     
     
 }
