@@ -20,3 +20,27 @@ Input :
          set(6, 14)    this pushes out key = 5 as LRU is full. 
          get(5)        returns -1 
 */
+
+public class Solution {
+    private int c;
+    private HashMap<Integer,Integer> map = new HashMap<Integer,Integer>();
+    private ArrayList<Integer> al = new ArrayList<Integer>();
+    private int count = 0;
+    
+    public Solution(int capacity) {
+        this.c = capacity;
+    }
+    
+    public int get(int key) {
+        if(map.containsKey(key)){ //Check if map contains key
+            removeElem(key); //remove that key
+            addFront(key,map.get(key)); //add to front
+            return map.get(key); //return 
+        }
+        else{
+            return -1;
+        }
+    }
+    
+    
+}
