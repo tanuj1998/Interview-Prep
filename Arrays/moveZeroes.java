@@ -7,9 +7,9 @@ class Solution {
             check++;
         }
     }
-
     for (int i = check; i < nums.length; i++) {
         nums[i] = 0;
     }
+        
     }
 }
