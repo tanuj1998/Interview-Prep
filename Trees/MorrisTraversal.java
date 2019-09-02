@@ -42,8 +42,8 @@ class MorrisTraversal{
                     System.out.print(curr.val + " "); 
                     curr = curr.right; 
                 	}
-				}
-			}
 		}
+	    }
+	 }
 	}
 }
