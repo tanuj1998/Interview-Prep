@@ -17,6 +17,7 @@ public class SortedInsertPosition {
         int low = 0;
         int high = a.size()-1;
         int mid;
+        
         while(low <= high){
             mid = (low+high)/2;
             
