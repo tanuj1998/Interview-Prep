@@ -21,7 +21,9 @@ public class SortedInsertPosition {
         if(a.get(low) > target){
             return low;
         }
-        if(a.get(high)<target) return high+1;
+        if(a.get(high) < target){
+            return high+1;
+        }
         while(low <= high){
             mid = (low+high)/2;
             
