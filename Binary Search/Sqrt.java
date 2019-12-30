@@ -15,7 +15,6 @@ public class Solution {
         int result = 1;
         
         while(first <= last){
-            
             long mid = (first + last)/2;
             if(mid*mid == a){
                 return (int) mid;
