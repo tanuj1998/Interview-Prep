@@ -13,7 +13,7 @@ public class Solution {
         long last = a;
         
         int result = 1;
-        
+       
         while(first <= last){
             long mid = (first + last)/2;
             if(mid*mid == a){
